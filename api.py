@@ -24,7 +24,7 @@ class Stats(db.Model):
 class GrabAndSave(Resource):
 
 	def post(self):
-		parser.add_argument('amount', type=float, help='Amount of currency ex-4.0.1')
+		parser.add_argument('amount', type=float, help='Amount ex-4.012')
 		parser.add_argument('currency', type=str, help='ISO3 code, ex-BTC,USD')
 		args = parser.parse_args(strict=True)
 		try:
